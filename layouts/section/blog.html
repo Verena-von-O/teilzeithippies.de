@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}de-DE{{ end }}">
+
+<head>
+	{{ partial "head.html" . }}
+  <title>Blog | {{ .Site.Title }}</title>
+</head>
+<body>
+
+	{{ partial "header.html"  . }} 
+
+<main class="site-content">
+
+<h1 class="title-main">Unser Blog</h1>
+
+<ul>			
+			{{ range .Data.Pages }}
+	<li class="blog-summary-row">
+<div>
+	<div class="hover03 column">
+		<a href="{{ .Permalink }}">
+			<figure><img class="blog-summary-img" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+			</figure>
+		</a>
+	</div>
+</div>
+
+<div class="blog-summary-column">
+	<div class="blog-summary-category">
+
+		{{ .Params.Category }}
+	</div>
+
+	<h2 class="blog-summary-title">
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	</h2>		
+
+	<div class="blog-summary-date">
+		Veröffentlicht am {{ .Date.Format "02. 01. 2006" }}
+	</div>
+				
+
+	<p>
+		{{ .Summary }}
+	</p>
+
+	<p>
+		<a class="blog-summary-read-more" href='{{ .Permalink }}'>Weiter lesen →</a>
+	</p>
+
+</div>
+
+	</li>
+	{{ end }}
+</ul>
+
+
+	</main>
+
+
+	{{ partial "footer.html" . }}
+
+	<script src="{{ .Site.BaseURL }}js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}de-DE{{ end }}">
+<head>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html"  . }} 
+
+	<main class="site-content">
+
+		<h2 class="blog-post-title">
+			{{ .Title }}
+		</h2>
+
+		<div class="blog-post-date">
+			Veröffentlicht am {{ .Date.Format "02. 01. 2006" }}
+		</div>
+
+		<img class="blog-post-hero" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+
+		
+		{{ .Content }}
+		
+	</main>
+
+
+	{{ partial "footer.html"  . }}
+
+	<script src="{{ .Site.BaseURL }}js/functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<header>
+<div class="header-all">
+    <div>
+            <a href="/">
+            <img src="/img/TeilzeitHippies_Logo_all.png" alt="">
+            </a>
+    </div>
+
+    <div class="header-menu">
+      <nav>
+         {{ $currentNode := . }}
+         {{ range .Site.Menus.main }}
+         <div>
+            <a {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} class="active"{{end}} href="{{ .URL }}">{{ .Name }}</a>
+         </div>
+         {{end}}
+      </nav>
+    </div>
+
+</div>
+</header>

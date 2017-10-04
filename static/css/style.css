@@ -1,0 +1,152 @@
+html {
+  text-rendering: optimizeLegibility;
+  --fun-color: #A1DBB2;
+  --text-color: #333;
+  --font-logo: 'Raleway', sans-serif;
+  --font-special: 'Caveat', sans-serif;
+  --font-text: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--font-logo);
+  letter-spacing: .03em;
+}
+
+p {
+  font-family: var(--font-text)
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--fun-color);
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-content {
+  min-height: 100vh;
+  margin: auto;
+  max-width: 80%;
+  margin-top: 4em;
+}
+@media only screen and (min-width: 58em) {
+  .site-content {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 70em) {
+  .site-content {
+    max-width: 55%;
+  }
+}
+
+/*header*/
+
+header {
+  border-bottom: 1px solid black;
+}
+
+.header-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+
+.header-all img {
+  width: 20em;
+}
+
+
+.header-menu nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.header-menu nav div {
+  padding-left: 2em;
+}
+
+.header-menu a {
+  
+}
+
+@media only screen and (max-width: 48em) {
+  .header-all {
+   flex-direction: column;
+
+    }
+  .header-menu nav {
+    flex-direction: column;
+    }
+  .header-menu nav div {
+    padding-left: 0;
+    padding-top: 1em;
+  }
+
+}
+
+
+/*index*/
+
+
+
+/*footer*/
+.footer-normal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social img {
+  padding: 1em;
+  height: 2em;
+  width: 2em;
+  filter: invert(0%);
+}
+
+.footer-social img:hover {
+  padding: 1em;
+  height: 2em;
+  width: 2em;
+  filter: invert(100%);
+}
+
+
+.footer-index {
+  margin-top: 5em;
+  padding-top: 35%;
+  position: relative;
+  background: url('/img/footer-city.png') no-repeat center bottom; 
+  background-size: 100%;
+  overflow: hidden;
+}

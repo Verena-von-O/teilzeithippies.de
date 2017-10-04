@@ -1,0 +1,7 @@
+baseURL = "https://www.teilzeithippies.de"
+languageCode = "de-de"
+title = "TeilzeitHippies"
+
+[blackfriday]
+   hrefTargetBlank = true
+
