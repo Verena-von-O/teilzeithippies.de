@@ -5,3 +5,20 @@ title = "TeilzeitHippies"
 [blackfriday]
    hrefTargetBlank = true
 
+[[menu.main]]
+    name = "Vorgestellt"
+    identifier = "vorgestellt"
+    url = "/vorgestellt/"
+    weight = 100
+
+[[menu.main]]
+    name = "Themen"
+    identifier = "themen"
+    url = "/themen/"
+    weight = 110
+
+[[menu.main]]
+    name = "Meiner Meinung nach..."
+    identifier = "meiner-meinung-nach"
+    url = "/meiner-meinung-nach/"
+    weight = 120

@@ -1,0 +1,33 @@
+<section class="sidebar-all">
+
+
+            {{ range first 3 .Data.Pages  }}
+<div>
+    <div>
+        <a href="{{ .Permalink }}">
+                <img class="sidebar-image" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="sidebar-posts-text-all">
+    <h2>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+
+    <p>
+        von {{ .Params.Author }}
+    </p>
+
+
+    <p>
+        {{ .Date.Format "02. 01. 2006" }}
+    </p>
+                
+</div>
+
+    </li>
+    {{ end }}
+</ul>
+
+</section>

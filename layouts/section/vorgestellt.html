@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}de-DE{{ end }}">
 
 <head>
-		{{ partial "head.html" . }}
+	{{ partial "head.html" . }}
+  <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
 </head>
-
 <body>
 
 	{{ partial "header.html"  . }} 
 
+
 <main class="site-content">
 
-
-<div>
+	
+<p class="overview-posts-title"> Neuste {{ .Page.Title }} </p>
 
 
 <ul class="overview-posts">			
-			{{ range first 3 .Data.Pages  }}
+			{{ range first 6 .Data.Pages }}
 	<li class="overview-single-posts">
 <div>
 	<div>
@@ -39,7 +40,7 @@
 	<p>
 		{{ .Date.Format "02. 01. 2006" }}
 	</p>
-				
+
 </div>
 
 	</li>
@@ -47,12 +48,12 @@
 </ul>
 
 
-
-</div>
-</main>
-{{ partial "footer.html" . }} 
+	</main>
 
 
-	</body>
+	{{ partial "footer.html" . }}
+
+	<script src="{{ .Site.BaseURL }}js/functions.js"></script>
+
+</body>
 </html>
-
