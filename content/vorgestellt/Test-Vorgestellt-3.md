@@ -1,7 +1,7 @@
 +++
-title = "Test Vorgestellt 2"
+title = "Test Vorgestellt 3"
 date = "2017-03-01"
-layout = "vorgestellt"
+layout = "article"
 image = "/img/Test-Doggo.jpg"
 category = "Vorgestellt"
 author = "Verena"

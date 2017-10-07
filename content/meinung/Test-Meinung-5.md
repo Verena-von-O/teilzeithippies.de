@@ -1,12 +1,11 @@
 +++
-title = "Test Vorgestellt 7 langer Titel"
-date = "2017-07-01"
+title = "Test Meinung 5 mit mehr Titeldiditeldidum"
+date = "2017-05-01"
 layout = "article"
-image = "/img/Test-1.jpg"
-category = "Vorgestellt"
+image = "/img/Test-Doggo.jpg"
+category = "Meinung"
 author = "Verena"
 +++
-
 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minus possimus quibusdam ducimus vitae id magni itaque blanditiis nam, veritatis molestias dolore omnis, quasi laudantium libero maxime quia provident ad.
@@ -35,8 +34,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab laborum natus perfe
 ### Title 4
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias assumenda omnis labore autem modi, rerum consequuntur dolorum nihil suscipit accusamus repudiandae expedita porro fugiat, optio distinctio nisi officia magnam.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet sequi consequatur incidunt, velit deserunt facilis quisquam, assumenda voluptate quo fuga, modi minima tempora quis temporibus ipsa voluptatibus itaque ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad exercitationem deserunt ex molestias, cum quod quos esse amet, omnis officia, molestiae recusandae non incidunt nisi velit culpa. 
-
-Totam, labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit autem ipsam voluptatibus, incidunt, quam illum reprehenderit in nostrum doloremque fuga amet numquam perspiciatis, sit consequuntur molestiae magnam, sapiente obcaecati. Dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum reprehenderit minus maiores, placeat voluptate suscipit nobis consequatur quae ipsum amet assumenda consectetur sapiente obcaecati necessitatibus? Aspernatur perspiciatis soluta, quasi.
 

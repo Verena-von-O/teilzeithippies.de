@@ -8,20 +8,30 @@
 
 	{{ partial "header.html"  . }} 
 
-	<main class="site-content">
+	<main class="site-content content-article-all">
 
-		<h2 class="blog-post-title">
+		<h1>
 			{{ .Title }}
-		</h2>
+		</h1>
+	<div class="article-top">
+		<p style="font-weight: 600">
+		von {{ .Params.Author }} am {{ .Date.Format "02. 01. 2006" }}
 
-		<div class="blog-post-date">
-			Veröffentlicht am {{ .Date.Format "02. 01. 2006" }}
-		</div>
+		</p>
 
-		<img class="blog-post-hero" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+		<p>
+		<p>
+			Lesezeit ca. {{ .ReadingTime }} Minuten
+		</p>
+	</div>
+
+		<img src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
 
 		
 		{{ .Content }}
+
+
+
 		
 	</main>
 

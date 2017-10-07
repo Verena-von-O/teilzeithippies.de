@@ -1,8 +1,8 @@
 +++
-title = "Test Vorgestellt 2"
+title = "Test Vorgestellt 6 super duper langer Titel"
 date = "2017-06-01"
-layout = "vorgestellt"
-image = "/img/Test-Doggo.jpg"
+layout = "article"
+image = "/img/Test-2.jpg"
 category = "Vorgestellt"
 author = "Verena"
 +++

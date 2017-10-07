@@ -18,7 +18,7 @@ title = "TeilzeitHippies"
     weight = 110
 
 [[menu.main]]
-    name = "Meiner Meinung nach..."
-    identifier = "meiner-meinung-nach"
-    url = "/meiner-meinung-nach/"
+    name = "Meinung"
+    identifier = "meinung"
+    url = "/meinung/"
     weight = 120
