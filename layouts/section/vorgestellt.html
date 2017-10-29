@@ -12,11 +12,25 @@
 
 <main class="site-content">
 
+
+<img class="hero-overview" src="/img/Test-4.jpg" alt="">
+
+<h1 class="hero-title"> Vorgestellt </h1>
+<p class="hero-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae ut, ab eveniet a unde debitis et neque consequuntur ratione, ullam voluptas aspernatur, magni ipsum tempore odio repellat officia odit.</p>
+
+
+<div class="sections-vorgestellt">
+	<a href=""><div class="sections-vorgestellt-einzeln"><img src="/img/vorgestellt-mensch.png" alt=""><p>Menschen</p></div></a>
+	<a href=""><div class="sections-vorgestellt-einzeln"><img src="/img/vorgestellt-buecher.png" alt=""><p>Bücher</p></div></a>
+	<a href=""><div class="sections-vorgestellt-einzeln"><img src="/img/vorgestellt-mensch.png" alt=""><p>Ideen</p></div></a>
+</div>
+
+
+
 <div>
-<p class="overview-posts-title-neuste"> Neuste {{ .Page.Title }} </p>
 
 <ul class="overview-posts-neuste">			
-			{{ range first 4 .Data.Pages }}
+			{{ range .Data.Pages }}
 	<li class="overview-single-posts-neuste">
 <div>
 	<div>
@@ -34,6 +48,11 @@
 		von {{ .Params.Author }}
 	</p>
 
+<a href="">
+	<p>
+		in {{ .Params.Category }}
+	</p>
+</a>
 
 	<p>
 		{{ .Date.Format "02. 01. 2006" }}
@@ -46,78 +65,6 @@
 
 </ul>
 </div>	
-
-<div>
-	<p class="overview-posts-title-top"> Top Auswahl aus {{ .Page.Title }} </p>
-<ul class="overview-posts-top">			
-			{{ range first 6 .Data.Pages }}
-	<li class="overview-single-posts-top">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-top" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-top">
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-
-	<p>
-		von {{ .Params.Author }}
-	</p>
-
-
-	<p>
-		{{ .Date.Format "02. 01. 2006" }}
-	</p>
-
-</div>
-
-	</li>
-	{{ end }}
-
-</ul>	
-
-</div>
-
-<div>
-	<p class="overview-posts-title-more"> Das könnte dich auch interessieren </p>
-<ul class="overview-posts-more">			
-			{{ range first 6 .Data.Pages }}
-	<li class="overview-single-posts-more">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-more" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-more">
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-
-	<p>
-		von {{ .Params.Author }}
-	</p>
-
-
-	<p>
-		{{ .Date.Format "02. 01. 2006" }}
-	</p>
-
-</div>
-
-	</li>
-	{{ end }}
-
-</ul>	
-
-</div>
 
 	</main>
 

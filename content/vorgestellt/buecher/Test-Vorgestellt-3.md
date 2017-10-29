@@ -1,10 +1,10 @@
 +++
-title = "Test Vorgestellt 6 super duper langer Titel"
-date = "2017-06-01"
+title = "Vorname Nachname"
+date = "2017-03-01"
 layout = "article"
-image = "/img/Test-2.jpg"
-category = "Vorgestellt"
-author = "Verena"
+image = "/img/Test-3.jpg"
+category = "Vorgestellt - Bücher"
+author = "Verena Ortlieb"
 +++
 
 

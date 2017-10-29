@@ -1,10 +1,10 @@
 +++
-title = "Test Vorgestellt 5 super mega duper langer extremer Titel"
-date = "2017-05-01"
+title = "Vorname Nachname-Doppelname"
+date = "2017-02-01"
 layout = "article"
-image = "/img/Test-3.jpg"
-category = "Vorgestellt"
-author = "Verena"
+image = "/img/Test-4.jpg"
+category = "Vorgestellt - Ideen"
+author = "Florian Bürger"
 +++
 
 

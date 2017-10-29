@@ -48,53 +48,26 @@ function showDivs(n) {
 
 
 
-<!-- 
+<div class="sections-vorgestellt">
+	<a href="/vorgestellt"><div class="sections-vorgestellt-einzeln"><img src="/img/social-facebook.png" alt=""><p>Vorgestellt</p></div></a>
+	<a href="/themen"><div class="sections-vorgestellt-einzeln"><img src="/img/social-instagram.png" alt=""><p>Themen</p></div></a>
+	<a href="/meinung"><div class="sections-vorgestellt-einzeln"><img src="/img/social-twitter.png" alt=""><p>Meinung</p></div></a>
+</div>
+
+
+<div>
+
 <ul class="overview-posts-neuste">			
-			{{ range first 4 .Data.Pages  }}
+			{{ range first 8 .Data.Pages }}
 	<li class="overview-single-posts-neuste">
 <div>
 	<div>
 		<a href="{{ .Permalink }}">
-			<img class="overview-image-main-neuste" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+				<img class="overview-image-main-neuste" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
 		</a>
 	</div>
 </div>
-
 <div class="overview-posts-text-all-neuste">
-	<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-
-	<p>von {{ .Params.Author }}</p>
-
-	<p>in {{ .Params.category }}</p>
-
-	<p> {{ .Date.Format "02. 01. 2006" }}</p>
-
-</div>
-
-	</li>
-	{{ end }}
-</ul> -->
-
-
-
-
-
-
-<div>
-<p class="overview-posts-title-top"> Neu in <a href="">Vorgestellt</a> </p>
-
-<ul class="overview-posts-top">		
-	{{ range first 4 (where .Data.Pages "Section" "vorgestellt") }}	
-	<li class="overview-single-posts-top">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-top" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-top">
 	<h3>
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 	</h3>
@@ -103,128 +76,24 @@ function showDivs(n) {
 		von {{ .Params.Author }}
 	</p>
 
+<a href="">
+	<p>
+		in {{ .Params.Category }}
+	</p>
+</a>
 
 	<p>
 		{{ .Date.Format "02. 01. 2006" }}
 	</p>
-				
+
 </div>
 
 	</li>
 	{{ end }}
+
 </ul>
+</div>	
 
-
-</div>
-
-<div>
-<p class="overview-posts-title-top"> Neu in <a href="">Themen</a> </p>
-
-<ul class="overview-posts-top">			
-	{{ range first 3 (where .Data.Pages "Section" "themen") }}	
-	<li class="overview-single-posts-top">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-top" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-top">
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-
-	<p>
-		von {{ .Params.Author }}
-	</p>
-
-
-	<p>
-		{{ .Date.Format "02. 01. 2006" }}
-	</p>
-				
-</div>
-
-	</li>
-	{{ end }}
-</ul>
-
-
-</div>
-
-<div>
-<p class="overview-posts-title-top"> Neu in <a href="">Meinung</a> </p>
-
-<ul class="overview-posts-top">			
-	{{ range first 3 (where .Data.Pages "Section" "meinung") }}	
-	<li class="overview-single-posts-top">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-top" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-top">
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-
-	<p>
-		von {{ .Params.Author }}
-	</p>
-
-
-	<p>
-		{{ .Date.Format "02. 01. 2006" }}
-	</p>
-				
-</div>
-
-	</li>
-	{{ end }}
-</ul>
-</div>
-
-
-<div>
-	<p class="overview-posts-title-more"> Das könnte dich auch interessieren </p>
-<ul class="overview-posts-more">			
-			{{ range first 3 .Data.Pages }}
-	<li class="overview-single-posts-more">
-<div>
-	<div>
-		<a href="{{ .Permalink }}">
-				<img class="overview-image-main-more" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
-		</a>
-	</div>
-</div>
-
-<div class="overview-posts-text-all-more">
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-
-	<p>
-		von {{ .Params.Author }}
-	</p>
-
-
-	<p>
-		{{ .Date.Format "02. 01. 2006" }}
-	</p>
-
-</div>
-
-	</li>
-	{{ end }}
-
-</ul>	
-
-</div>
 
 
 </main>

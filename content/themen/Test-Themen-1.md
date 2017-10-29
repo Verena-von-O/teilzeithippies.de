@@ -1,6 +1,6 @@
 +++
 title = "Test Themen 1"
-date = "2017-01-01"
+date = "2017-12-01"
 layout = "article"
 image = "/img/Test-Doggo.jpg"
 category = "Themen"

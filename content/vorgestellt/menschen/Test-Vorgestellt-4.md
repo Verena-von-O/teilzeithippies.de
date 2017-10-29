@@ -1,10 +1,10 @@
 +++
-title = "Test Vorgestellt 2"
-date = "2017-02-01"
+title = "Vorname Nachname - Zusatz Worte"
+date = "2017-04-01"
 layout = "article"
-image = "/img/Test-Doggo.jpg"
-category = "Vorgestellt"
-author = "Verena"
+image = "/img/Test-4.jpg"
+category = "Vorgestellt - Menschen"
+author = "Verena Ortlieb"
 +++
 
 
