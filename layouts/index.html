@@ -12,14 +12,35 @@
 <main class="site-content">
 
 
-<div>
-
-<div class="index-slide-content index-slide-display-container">
+<!-- <div class="index-slide-content index-slide-display-container">
 
 <img class="mySlides" src="/img/Test-1.jpg" style="width:100%;height:30em;object-fit: cover;">
 <img class="mySlides" src="/img/Test-2.jpg" style="width:100%;height:30em;object-fit: cover;">
 <img class="mySlides" src="/img/Test-3.jpg" style="width:100%;height:30em;object-fit: cover;">
 <img class="mySlides" src="/img/Test-4.jpg" style="width:100%;height:30em;object-fit: cover;">
+
+  <button class="index-slide-button index-slide-black index-slide-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="index-slide-button index-slide-black index-slide-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div> -->
+
+
+
+
+
+
+
+<div class="index-slide-content index-slide-display-container">
+
+	<ul>
+	{{ range first 4 .Data.Pages }}
+		<li>
+			<a href="{{ .Permalink }}">
+				<img class="mySlides" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+			</a>
+		</li>
+	{{ end }}
+	</ul>
 
   <button class="index-slide-button index-slide-black index-slide-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="index-slide-button index-slide-black index-slide-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -49,16 +70,16 @@ function showDivs(n) {
 
 
 <div class="sections-vorgestellt">
-	<a href="/vorgestellt"><div class="sections-vorgestellt-einzeln"><img src="/img/social-facebook.png" alt=""><p>Vorgestellt</p></div></a>
-	<a href="/themen"><div class="sections-vorgestellt-einzeln"><img src="/img/social-instagram.png" alt=""><p>Themen</p></div></a>
-	<a href="/meinung"><div class="sections-vorgestellt-einzeln"><img src="/img/social-twitter.png" alt=""><p>Meinung</p></div></a>
+	<a href="/vorgestellt"><div class="sections-vorgestellt-einzeln"><img src="/img/vorgestellt.png" alt=""><p>Vorgestellt</p></div></a>
+	<a href="/themen"><div class="sections-vorgestellt-einzeln"><img src="/img/themen.png" alt=""><p>Themen</p></div></a>
+	<a href="/meinung"><div class="sections-vorgestellt-einzeln"><img src="/img/meinung.png" alt=""><p>Meinung</p></div></a>
 </div>
 
 
 <div>
 
 <ul class="overview-posts-neuste">			
-			{{ range first 8 .Data.Pages }}
+			{{ range first 16 .Data.Pages }}
 	<li class="overview-single-posts-neuste">
 <div>
 	<div>
