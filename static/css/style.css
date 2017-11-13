@@ -131,7 +131,8 @@ header {
 
 /* Slidshow */
 
-.index-slide-content{margin:auto;object-fit: cover; width: 80%; margin: 1em auto}
+.index-slide-content{width: 80%; height: 30em; margin: 1em auto;background-color: var(--dark-color)}
+.index-slide-content img {width: auto; max-width: 100%; margin: auto;}
 .index-slide-tooltip,.index-slide-display-container{position:relative}.index-slide-tooltip .index-slide-text{display:none}.index-slide-tooltip:hover .index-slide-text{display:inline-block}
 .index-slide-display-container:hover .index-slide-display-hover{display:block}.index-slide-display-container:hover span.index-slide-display-hover{display:inline-block}.index-slide-display-hover{display:none}
 
@@ -144,7 +145,7 @@ header {
 .index-slide-dropdown-hover.index-slide-mobile,.index-slide-dropdown-hover.index-slide-mobile .index-slide-btn,.index-slide-dropdown-hover.index-slide-mobile .index-slide-button,.index-slide-dropdown-click.index-slide-mobile,.index-slide-dropdown-click.index-slide-mobile .index-slide-btn,.index-slide-dropdown-click.index-slide-mobile .index-slide-button{width:100%}}
 .index-slide-button:hover{color:#000!important;background-color:#ccc!important;}
 
-.index-slide-black,.index-slide-hover-black:hover{color:#fff!important;background-color:#000!important;}
+.index-slide-black,.index-slide-hover-black:hover{color:var(--dark-color)!important;background-color:var(--fun-color)!important;opacity:0.8;}
 .index-slide-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .index-slide-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 
