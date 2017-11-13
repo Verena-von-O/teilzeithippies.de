@@ -17,9 +17,16 @@
 	<ul>
 	{{ range first 4 .Data.Pages }}
 		<li>
-			<a href="{{ .Permalink }}">
-				<img class="mySlides" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+			<a class="mySlides" href="{{ .Permalink }}">
+				<img class="index-slides-images" src="{{ .Site.BaseURL}}{{ .Params.image }}" alt="">
+		<div class="index-slide-text">
+			<h2>{{ .Title }}</h2>
+			<p>in {{ .Params.Category }}</p>
+			<p>von {{ .Params.Author }}</p>
+			<p>{{ .Date.Format "02. 01. 2006" }}</p>
+		</div>			
 			</a>
+
 		</li>
 	{{ end }}
 	</ul>
