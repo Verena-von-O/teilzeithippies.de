@@ -1,9 +1,9 @@
 +++
-title = "Test Themen 3 Test Test Test Test"
-date = "2017-03-01"
+title = "Test Natur 1 mit mehr Inhalt"
+date = "2017-01-01"
 layout = "article"
-image = "/img/Test-3.jpg"
-category = "Themen"
+image = "/img/Test-4.jpg"
+category = "Natur"
 author = "Verena"
 +++
 

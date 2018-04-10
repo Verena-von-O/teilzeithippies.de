@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}de-DE{{ end }}">
 	<head>
 		{{ partial "head.html" . }}
+		<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
 	</head>
 	<body>
 		{{ partial "header.html"  . }}
 		<main class="site-content">
-			<div class="index-main">
+			<h1 class="hero-title"> Essen </h1>
+			<p class="hero-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae ut, ab eveniet a unde debitis et neque consequuntur ratione, ullam voluptas aspernatur, magni ipsum tempore odio repellat officia odit.</p>
+			<div>
 				<ul>
 					{{ range .Data.Pages }}
 					<li>
@@ -39,5 +42,6 @@
 			</div>
 		</main>
 		{{ partial "footer.html" . }}
+		<script src="{{ .Site.BaseURL }}js/functions.js"></script>
 	</body>
 </html>

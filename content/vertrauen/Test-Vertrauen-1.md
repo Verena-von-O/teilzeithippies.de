@@ -1,9 +1,9 @@
 +++
-title = "Test Themen 1"
+title = "Test Vertrauen 1"
 date = "2017-12-01"
 layout = "article"
 image = "/img/Test-Doggo.jpg"
-category = "Themen"
+category = "Vertrauen"
 author = "Verena"
 +++
 

@@ -6,19 +6,33 @@ title = "TeilzeitHippies"
    hrefTargetBlank = true
 
 [[menu.main]]
-    name = "Vorgestellt"
-    identifier = "vorgestellt"
-    url = "/vorgestellt/"
+    name = "Essen"
+    identifier = "essen"
+    url = "/essen/"
     weight = 100
 
 [[menu.main]]
-    name = "Themen"
-    identifier = "themen"
-    url = "/themen/"
+    name = "Bewegung"
+    identifier = "bewegung"
+    url = "/bewegung/"
     weight = 110
 
 [[menu.main]]
-    name = "Meinung"
-    identifier = "meinung"
-    url = "/meinung/"
+    name = "Natur"
+    identifier = "natur"
+    url = "/natur/"
     weight = 120
+
+
+[[menu.main]]
+    name = "Selbst"
+    identifier = "selbst"
+    url = "/selbst/"
+    weight = 130
+
+
+[[menu.main]]
+    name = "Vertrauen"
+    identifier = "vertrauen"
+    url = "/vertrauen/"
+    weight = 140
